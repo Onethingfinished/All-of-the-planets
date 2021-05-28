@@ -1,0 +1,305 @@
+<html>
+  <head>
+    <title>Image maps</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@300&family=Work+Sans:wght@500&display=swap" rel="stylesheet">
+    <style>
+      body{
+        background-image: url("https://thumbs.gfycat.com/ValuableEarnestCockroach-size_restricted.gif");
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+      #input1{
+        display: block;
+        background-color: rgb(139, 139, 139);
+        color: rgb(55, 94, 95);
+        font-size: 30px;
+        text-align: center;
+      }
+
+      .SolarSystem{
+        display: inline;
+        font-size: 50px;
+      }
+
+      .planets{
+        background-color: aquamarine;
+        color:rgb(0, 77, 128);
+        list-style:none;
+        text-decoration:none;
+        padding:8.7px;
+        font-size: 50px;
+        font-family: Prompt;
+        
+      }
+      .planets:hover{
+        background-color: blueviolet;
+        color:chartreuse;
+        list-style:none;
+        text-decoration:none;
+        padding:13px;
+        font-size: 40px;
+        font-family: Work Sans;
+      }
+
+      .head{
+        color: darkorange;
+        font-family:'Courier New', Courier, monospace;
+        font-size: 50px;
+        text-align: center;
+        margin-top: 5%;
+      }
+
+      .theimages{
+        height: 400px;
+        width: auto;
+      }
+
+      .head:hover{
+        color: #bb0000;
+        font-family:monospace;
+        font-size: 55px;
+        text-align: left;
+        margin-top: 7%;
+      }
+
+      
+
+      .theparagraphs{
+        color: deeppink;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 20;
+      }
+
+      .theparagraphs:hover{
+        color: lightskyblue;
+        font-family: fantasy;
+        font-size: 25;
+      }
+    </style>
+    <script>
+      function display(name){
+        document.getElementById("input1").value = name;
+      }
+      var move=null;
+      var move2=null;
+      var move3=null;
+      var move4=null;
+      var move5=null;
+      var move6=null;
+      var move7=null;
+      var move8=null;
+
+      function initial(){
+        move=document.getElementById("p1");
+        move.style.position='relative';
+        move.style.left='0px';
+        move2=document.getElementById("p2");
+        move2.style.position='relative';
+        move2.style.left='0px';
+        move3=document.getElementById("p3");
+        move3.style.position='relative';
+        move3.style.left='0px';
+        move4=document.getElementById("p4");
+        move4.style.position='relative';
+        move4.style.left='0px';
+        move5=document.getElementById("p5");
+        move5.style.position='relative';
+        move5.style.left='0px';
+        move6=document.getElementById("p6");
+        move6.style.position='relative';
+        move6.style.left='0px';
+        move7=document.getElementById("p7");
+        move7.style.position='relative';
+        move7.style.left='0px';
+        move8=document.getElementById("p8");
+        move8.style.position='relative';
+        move8.style.left='0px';
+
+      }
+
+      function moveright(){
+        move.style.left=parseInt(move.style.left)+10+'px';
+      }
+      function moveright2(){
+        move2.style.left=parseInt(move2.style.left)+10+'px';
+      }
+
+      function moveright3(){
+        move3.style.left=parseInt(move3.style.left)+10+'px';
+      }
+
+      function moveright4(){
+        move4.style.left=parseInt(move4.style.left)+10+'px';
+      }
+
+      function moveright5(){
+        move5.style.left=parseInt(move5.style.left)+10+'px';
+      }
+
+      function moveright6(){
+        move6.style.left=parseInt(move6.style.left)+10+'px';
+      }
+
+      function moveright7(){
+        move7.style.left=parseInt(move7.style.left)+10+'px';
+      }
+
+      function moveright8(){
+        move8.style.left=parseInt(move8.style.left)+10+'px';
+      }
+
+      window.onload=initial;
+      //comment
+    </script>
+  </head>
+  
+
+  <body>
+    <!--Comment-->
+    <center>
+    <p>Image maps: An image map is an image with clickable areas.
+      An image map is made up of several parts:
+      A map name, area shapes, coordinates, URLs, and the image or graphic the map is defining.
+	  </p>
+  <img src="https://thumbor.forbes.com/thumbor/960x0/https%3A%2F%2Fblogs-images.forbes.com%2Fstartswithabang%2Ffiles%2F2018%2F05%2Fshot.jpg" usemap="#SolarSystem">
+
+  <map name="SolarSystem">
+    <area target="_blank" alt="Mercury" title="Mercury" href="https://solarsystem.nasa.gov/planets/mercury/overview/" coords="121,215,10" shape="circle" onmouseover="display('Mercury')" onmouseout="display('')">
+    <area target="_blank" alt="Sun" title="Sun" href="https://solarsystem.nasa.gov/solar-system/sun/overview/" coords="1,142,42,184,69,232,85,270,91,316,93,332,94,341,93,359,90,377,86,391,78,416,69,434,66,452,60,463,47,475,37,490,31,492,23,496,15,496,6,495,3,484,3,295,11,429,0,308" shape="poly" onmouseover="display('Sun')" onmouseout="display('')">
+    <area target="_blank" alt="Venus" title="Venus" href="https://solarsystem.nasa.gov/planets/venus/overview/" coords="153,202,13" shape="circle" onmouseover="display('Venus')" onmouseout="display('')">
+    <area target="_blank" alt="Earth" title="Earth" href="https://solarsystem.nasa.gov/planets/earth/overview/" coords="188,178,22" shape="circle" onmouseover="display('Earth')" onmouseout="display('')">
+    <area target="_blank" alt="Mars" title="Mars" href="https://mars.nasa.gov/all-about-mars/facts/" coords="224,171,12" shape="circle" onmouseover="display('Mars')" onmouseout="display('')">
+    <area target="_blank" alt="Jupiter" title="Jupiter" href="https://solarsystem.nasa.gov/planets/jupiter/overview/" coords="407,304,62" shape="circle" onmouseover="display('Jupiter')" onmouseout="display('')">
+    <area target="_blank" alt="Saturn" title="Saturn" href="https://solarsystem.nasa.gov/planets/saturn/overview/" coords="556,184,573,184,593,192,605,189,631,187,655,188,663,198,656,212,641,221,622,230,595,243,592,257,584,267,572,267,552,268,541,264,523,264,500,265,480,264,464,257,477,239" shape="poly" onmouseover="display('Saturn')" onmouseout="display('')">
+    <area target="_blank" alt="Uranus" title="Uranus" href="https://solarsystem.nasa.gov/planets/uranus/overview/" coords="705,121,712,130,713,141,730,146,739,156,737,179,729,194,711,203,706,214,699,203,691,193,681,176,684,154" shape="poly" onmouseover="display('Uranus')" onmouseout="display('')">
+    <area target="_blank" alt="Neptune" title="Neptune" href="https://solarsystem.nasa.gov/planets/neptune/overview/" coords="782,135,27" shape="circle" onmouseover="display('Neptune')" onmouseout="display('')">
+    <area target="_blank" alt="Asteroid belt" title="Asteroid belt" href="https://www.space.com/16105-asteroid-belt.html" coords="184,6,207,4,220,19,239,42,262,77,295,140,319,208,330,259,330,291,335,324,332,367,327,417,318,443,309,474,297,487,301,221,273,134,243,81,221,46,202,26,193,18,229,64,236,67" shape="poly" onmouseover="display('Asteroid belt')" onmouseout="display('')">
+    <area target="_blank" alt="Kuiper belt " title="Kuiper belt " href="https://solarsystem.nasa.gov/solar-system/kuiper-belt/overview/" coords="936,494,824,6" shape="rect" onmouseover="display('Kuiper belt')" onmouseout="display('')">
+    <area target="_blank" alt="Comets" title="Comets" href="https://solarsystem.nasa.gov/asteroids-comets-and-meteors/comets/overview/" coords="601,388,633,387,661,389,661,404,648,407,629,410,609,410,598,403" shape="poly" onmouseover="display('Comet')" onmouseout="display('')">
+    
+  </map>
+  <input type="text" id="input1" size="50">
+      <li class="SolarSystem"><a href="#mercury" class="planets">Mercury</a></li>
+      <li class="SolarSystem"><a href="#venus" class="planets">Venus</a></li>
+      <li class="SolarSystem"><a href="#earth" class="planets">Earth</a></li>
+      <li class="SolarSystem"><a href="#mars" class="planets">Mars</a></li>
+      <li class="SolarSystem"><a href="#jupiter" class="planets">Jupiter</a></li>
+      <li class="SolarSystem"><a href="#saturn" class="planets">Saturn</a></li>
+      <li class="SolarSystem"><a href="#uranus" class="planets">Uranus</a></li>
+      <li class="SolarSystem"><a href="#neptune" class="planets">Neptune</a></li>
+    </center>
+    <section>
+      <div id="mercury">
+        <h2 class="head">Mercury</h2>
+        <img class="theimages" onclick="moveright()" src="mercury.amazing-removebg-preview.png" id="p1">
+        <p class="theparagraphs">
+          The smallest planet in our solar system and nearest to the Sun, Mercury is only slightly larger than Earth's Moon.
+          From the surface of Mercury, the Sun would appear more than three times as large as it does when viewed from Earth, and the sunlight would be as much as seven times brighter. Despite its proximity to the Sun, Mercury is not the hottest planet in our solar system – that title belongs to nearby Venus, thanks to its dense atmosphere.
+          Its orbit around the Sun takes 87.97 Earth days, 
+          the shortest of all the Sun's planets.
+          Mercury rotates in a way that is unique in the Solar System. 
+          Because the planet is so close to the sun,
+          Mercury's surface temperature can reach a 
+          scorching 840 degrees Fahrenheit
+           (450 degrees Celsius). 
+           However, since this world doesn't have much of
+           a real atmosphere to entrap any heat, at night temperatures can plummet to minus 275 F (minus 170 C), a temperature swing of more than 
+           1,100 degrees F (600 degree C),
+          the greatest in the solar system. 
+        </p>
+      </div>
+    </section>
+    <div id="venus">
+      <h2 class="head">Venus</h2>
+          <img onclick="moveright2()" id="p2" class="theimages" src="venus-removebg-preview.png">
+          <p class="theparagraphs">
+            Venus is the second planet from the Sun
+            and our closest planetary neighbor.
+            Similar in structure and size to Earth, 
+            Venus spins slowly in the opposite direction from most planets. 
+            Its thick atmosphere traps heat in a runaway greenhouse effect,
+            making it the hottest planet in our solar system with surface temperatures hot enough to melt lead. 
+            Glimpses below the clouds reveal volcanoes and deformed mountains.
+            With a radius of 3,760 miles (6,052 kilometers), Venus is roughly the same size as Earth — just slightly smaller.
+            From an average distance of 67 million 
+            miles (108 million kilometers), 
+            Venus is 0.7 astronomical units away from the Sun. One astronomical unit (abbreviated as AU),
+            is the distance from the Sun to Earth. It takes sunlight 6 minutes to travel from the Sun to Venus.
+            Venus' rotation and orbit are unusual in 
+            several ways. Venus is one of just two planets that rotate from east to west. Only Venus and Uranus have this "backwards" rotation. 
+            It completes one rotation in 243 Earth days.
+          </p>
+      </div>
+    </section>
+  <section>
+    <div id="earth">
+      <h2 class="head">Earth</h2>
+      <img onclick="moveright3()" id="p3" class="theimages" src="earth-removebg-preview.png">
+      <p class="theparagraphs">
+        Our home planet is the third planet from the Sun, and the only place we know of so far that’s inhabited by living things.
+        While Earth is only the fifth largest planet in the solar system, it is the only world in our solar system with liquid water on the surface. Just slightly larger than nearby Venus, Earth is the biggest of the four planets closest to the Sun, all of which are made of rock and metal.
+        The name Earth is at least 1,000 years old. All of the planets, except for Earth, were named after Greek and Roman gods and goddesses. However, the name Earth is a Germanic word, which simply means “the ground.”
+        Earth's atmosphere and oceans were formed by volcanic activity and outgassing. Water vapor from these sources condensed into the oceans, augmented by water and ice from asteroids, protoplanets, and comets. Sufficient water to fill the oceans may have been on Earth since it formed.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div id="mars">
+      <h2 class="head">Mars</h2>
+      <img onclick="moveright4()" id="p4" class="theimages" src="images-removebg-preview.png">
+      <p class="theparagraphs">
+        With a radius of 2,106 miles, Mars is the seventh largest planet in our solar system and about half the diameter of Earth. Its surface gravity is 37.5 percent of Earth’s.
+        Mars rotates on its axis every 24.6 Earth hours, defining the length of a Martian day, which is called a sol (short for “solar day”). Mars’s axis of rotation is tilted 25.2 degrees relative to the plane of the planet’s orbit around the sun, which helps give Mars seasons similar to those on Earth.
+        Mars is sometimes called the Red Planet. It's red because of rusty iron in the ground. Like Earth, Mars has seasons, polar ice caps, volcanoes, canyons, and weather. It has a very thin atmosphere made of carbon dioxide, nitrogen, and argon.
+
+      </p>
+    </div>
+  </section>
+  <section>
+    <div id="jupiter">
+      <h2 class="head">Jupiter</h2>
+      <img onclick="moveright5()" id="p5" class="theimages" src="F1.large-removebg-preview.png">
+      <p class="theparagraphs">
+        Jupiter is the fifth planet from the Sun and the largest in the Solar System. It is a gas giant with a mass two and a half times that of all the other planets in the Solar System combined, but less than one-thousandth the mass of the Sun.
+        Jupiter Is The Fastest Spinning Planet In The Solar System.
+        Jupiter Has 67 Moons.
+        With an average temperature of minus 234 degrees Fahrenheit (minus 145 degrees Celsius), Jupiter is frigid even in its warmest weather. Unlike Earth, whose temperature varies as one moves closer to or farther from the equator, Jupiter's temperature depends more on height above the surface.
+      </p>
+    </div>
+  </section>
+  <section>
+    <div id="saturn">
+      <h2 class="head">Saturn</h2>
+      <img onclick="moveright6()" id="p6" class="theimages" src="saturn-saved-earth-removebg-preview.png">
+      <p class="theparagraphs">
+        Adorned with thousands of beautiful ringlets, Saturn is unique among the planets. It is not the only planet to have rings—made of chunks of ice and rock—but none are as spectacular or as complicated as Saturn's. Like fellow gas giant Jupiter, Saturn is a massive ball made mostly of hydrogen and helium.
+        From an average distance of 886 million miles (1.4 billion kilometers), Saturn is 9.5 astronomical units away from the Sun. One astronomical unit (abbreviated as AU), is the distance from the Sun to Earth. From this distance, it takes sunlight 80 minutes to travel from the Sun to Saturn.Saturn has the second-shortest day in the solar system. One day on Saturn takes only 10.7 hours (the time it takes for Saturn to rotate or spin around once), and Saturn makes a complete orbit around the Sun (a year in Saturnian time) in about 29.4 Earth years (10,756 Earth days).
+      </p>
+    </div>
+  </section>
+  <section>
+    <div id="uranus">
+      <h2 class="head">Uranus</h2>
+      <img onclick="moveright7()" id="p7" class="theimages" src="Uranus2-removebg-preview.png">
+      <p class="theparagraphs">The seventh planet from the Sun with the third largest diameter in our solar system, Uranus is very cold and windy. The ice giant is surrounded by 13 faint rings and 27 small moons as it rotates at a nearly 90-degree angle from the plane of its orbit. This unique tilt makes Uranus appear to spin on its side, orbiting the Sun like a rolling ball.
+        Uranus is made of water, methane, and ammonia fluids above a small rocky center. Its atmosphere is made of hydrogen and helium like Jupiter and Saturn, but it also has methane. ... Like Venus, Uranus rotates in the opposite direction as most other planets. And unlike any other planet, Uranus rotates on its side.
+
+      </p>
+    </div>
+  </section>
+  <section>
+    <div id="neptune">
+      <h2 class="head">Neptune</h2>
+      <img onclick="moveright8()" id="p8" class="theimages" src="eNTJrysq4A6DqXncBtsRrB-removebg-preview.png">
+      <p class="theparagraphs">Neptune is the eighth and farthest-known Solar planet from the Sun. In the Solar System, it is the fourth-largest planet by diameter, the third-most-massive planet, and the densest giant planet. It is 17 times the mass of Earth.
+        Neptune is very similar to Uranus. It's made of a thick fog of water, ammonia, and methane over an Earth-sized solid center. Its atmosphere is made of hydrogen, helium, and methane. The methane gives Neptune the same blue color as Uranus. Neptune has six rings, but they're very hard to see.
+        Neptune has 13 moons (and one more awaiting confirmation of discovery).
+        Neptune was discovered in 1846 by Urbain Le Verrier, John Couch Adams, and Johann Galle. Only Voyager 2 has visited Neptune.
+      </p>
+    </div>
+  </section>
+
+
+  </body>
+</html>
